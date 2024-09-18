@@ -1,18 +1,70 @@
+p{ 
+	font-family: verdana
+}
+	
+p.workexperience{
+	color: navy;
+
+}
+
+header {border:2pt solid green;
+}
+
+#jobtitle{
+	font-size: 25px;
+	color: blue
+}
+
+p.quote{
+	text-align:center;
+	border: 1pt dashed orange
+}
+
 header h1:first-of-type {
     	font-size: 40px;
 	text-align: center;
 	color: #A020F0; 
+	font-family: verdana
 }
+
 header h2:first-of-type {
 	text-align: center; 
+	color: teal
 }
+
 
 h1{ 
 	color: #008000;
+	font-family: verdana
+}
+
+h2{
+	font-family:verdana
+	}
+
+h3{
+	font-family:verdana
 }
 
 .center-image {
     display: block; /* Makes the image a block element */
     margin-left: auto;
     margin-right: auto;
+}
+
+blockquote{
+	background-color: lavender 
+}
+
+ol{	
+	border: 4px dashed green;
+	line-height: 2;
+	font-family: verdana; 
+	font-size: 15 px;
+
+}
+
+ul{
+	font-family: verdana;
+	line-height: 3;
 }
