@@ -1,10 +1,10 @@
 #year2, #year4{
   background-color: #9aadd1;
-  padding: 40px 210px 20px 20px;
+  padding: 10px 210px 10px 10px;
 }
 
 #year1, #year3{
-  padding: 40px 210px 20px 20px;
+  padding: 10px 210px 10px 10px;
   border: 1px solid #9aadd1;
 }
 
@@ -35,10 +35,9 @@ h1 {
 form {
     width: 600px;
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
 
 label {
