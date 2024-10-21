@@ -1,0 +1,95 @@
+#year2, #year4{
+  background-color: #9aadd1;
+  padding: 40px 210px 20px 20px;
+}
+
+#year1, #year3{
+  padding: 40px 210px 20px 20px;
+  border: 1px solid #9aadd1;
+}
+
+table, th {
+  border:1px solid black;
+  border-collapse: collapse;
+  padding: 20px;
+  font-family: Helvetica, sans-serif;
+
+}
+td{
+  border:1px solid black; 
+  border-collapse: collapse;
+  padding: 15px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #092047;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #54506e;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #9aadd1;
+    color: #333;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #9aadd1;
+}
+
+tbody tr:hover {
+    background-color: #777696;
+}
