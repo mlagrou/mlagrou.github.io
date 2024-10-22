@@ -50,7 +50,6 @@
   </tbody>
 <script>
 
-  <!-- add event listener to modify borrowing years 2, 3, and 4 based on input-->
   document.getElementById('borrowingYear1').addEventListener("input", () => {
     const borrowingYear1 = parseInt(document.getElementById('borrowingYear1').value);
     document.getElementById('borrowingYear2').value = borrowingYear1 + 1;
@@ -75,7 +74,6 @@ let totalDebt = loanAmt1 * Math.pow(1 + interestRate, yearsBetween1and4) +
 loanAmt2 * Math.pow(1 + interestRate, yearsBetween1and4 - 1) +
 loanAmt3 * Math.pow(1 + interestRate, yearsBetween1and4 - 2) +
 loanAmt4; // Last loan has no interest yet
-<!--here  is the number of repayment years-->
   const repaymentYears = 10;
   
 const amortization = (totalDebt * interestRate) / (1 - Math.pow(1 + interestRate, -repaymentYears));
