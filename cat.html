@@ -1,0 +1,52 @@
+<div id="cat"></div>
+<div id="jsonCat">
+
+<script>
+  function fetchCatImage(){
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET", "https://cataas.com/cat", true)
+  xhr.responseType = "blob";
+  
+  xhr.onload = function(){
+    if (xhr.status === 200) {
+      const imageURL = URL.createObjectURL(xhr.response)
+      const catDiv = document.getElementById("cat")
+      catDiv.innerHTML = `<img src="${imageURL}" alt="random cat" />`
+    }
+    else {
+      console.error("failed to load image")
+    }
+  };
+  xhr.send();
+  
+}
+
+window.onload = function(){ 
+  fetchCatImage();
+  fetchJSON();
+}
+
+let json = "";
+let js = null;
+
+function fetchJSON(){
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET", "https://cataas.com/cat?json=true", true)
+  xhr.setRequestHeader("Accept", "application/json");
+  
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      const response = JSON.parse(xhr.responseText);
+      const imgURL = "https://cataas.com" + response.url;
+      const catDiv = document.getElementById("jsonCat");
+      json = xhr.responseText
+      catDiv.innerHTML = json;
+      js = JSON.parse(json)
+    }
+    else{
+      console.error("failed to load")
+    }
+  }
+  xhr.send();
+}
+  </script>
