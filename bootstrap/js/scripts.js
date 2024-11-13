@@ -24,3 +24,27 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
 });
+
+function fetchCatImage(){
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://cataas.com//cat?type=xsmall", true)
+    xhr.responseType = "blob";
+    
+    xhr.onload = function(){
+      if (xhr.status === 200) {
+        const imageURL = URL.createObjectURL(xhr.response)
+        const catDiv = document.getElementById("CatCard")
+        catDiv.innerHTML = `<img src="${imageURL}" alt="random cat" />`
+      }
+      else {
+        console.error("failed to load image")
+      }
+    };
+    xhr.send();
+    
+  }
+  
+  window.onload = function(){ 
+    fetchCatImage();
+  }
+

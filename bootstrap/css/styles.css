@@ -892,6 +892,8 @@ progress {
   --bs-gutter-y: 3rem;
 }
 
+
+
 @media (min-width: 576px) {
   .col-sm {
     flex: 1 0 0%;
@@ -1446,6 +1448,10 @@ progress {
   .col-xl-3 {
     flex: 0 0 auto;
     width: 25%;
+  }
+
+  #CatCard{
+    max-width: 30px;
   }
   .col-xl-4 {
     flex: 0 0 auto;
@@ -4222,6 +4228,7 @@ textarea.form-control-lg {
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
 }
+
 
 .card-title {
   margin-bottom: var(--bs-card-title-spacer-y);
