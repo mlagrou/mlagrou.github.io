@@ -48,3 +48,30 @@ function fetchCatImage(){
     fetchCatImage();
   }
 
+  document.getElementById("ageRangeForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const minAge = parseInt(document.getElementById("minAge").value, 10);
+    const maxAge = parseInt(document.getElementById("maxAge").value, 10);
+
+    if (isNaN(minAge) || isNaN(maxAge)) {
+        alert("Please enter valid age values.");
+        return;
+    }
+
+    const filteredData = tableData.filter(row => row.age >= minAge && row.age <= maxAge);
+    const entryCount = filteredData.length;
+
+    if (entryCount === 0) {
+        document.getElementById("averageSalary").textContent = "No matching data found.";
+        return;
+    }
+
+    const totalSalary = filteredData.reduce((sum, row) => {
+        return sum + parseFloat(row.salary.replace(/[$,]/g, ""));
+    }, 0);
+
+    const averageSalary = (totalSalary / entryCount).toFixed(2);
+
+    document.getElementById("averageSalary").textContent = 
+        `Number of Entries: ${entryCount}, Average Salary: $${averageSalary}`;
+});
