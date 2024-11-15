@@ -2,10 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\bootstrap",
-    "\\bootstrap\\assets\\demo",
     "\\bootstrap\\css",
     "\\bootstrap\\js"
   ],
-  "SelectedNode": "\\bootstrap\\js\\scripts.js",
+  "SelectedNode": "\\bootstrap\\js\\datatables-simple-demo.js",
   "PreviewInSolutionExplorer": false
 }

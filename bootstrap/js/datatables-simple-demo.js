@@ -128,6 +128,17 @@ window.addEventListener('DOMContentLoaded', event => {
     
         document.getElementById("averageSalary").textContent = 
             `Number of Entries: ${entryCount}, Average Salary: $${averageSalary}`;
+
+        outputName = document.getElementById("randomText");
+
+        randomIndex = Math.floor(Math.random() * tableData.length)
+        outputName.innerHTML = 'Name: ' + tableData[randomIndex].name +
+            '<br>Age: ' + tableData[randomIndex].age +
+            '<br>Position: ' + tableData[randomIndex].position +
+            '<br>Office: ' + tableData[randomIndex].position +
+            '<br>Start Date: ' + tableData[randomIndex].startDate +
+            '<br>Salary: ' + tableData[randomIndex].salary
+
     });
 
 
